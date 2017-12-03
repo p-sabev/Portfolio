@@ -1,0 +1,467 @@
+@charset "UTF-8";
+
+/* COLORS */
+:root {
+    --main-bg-color-blue: #3498DB;
+    --main-bg-color-dark-blue: #2C3E50;
+    --main-bg-color-red: #E74C3C;
+    --main-bg-color-grey: #ECF0EC;
+    --main-bg-color-white: #EFF5F6;
+    --main-bg-color-black: #020E17;
+}
+
+.white {
+    color: var(--main-bg-color-white);
+}
+
+.black {
+    color: var(--main-bg-color-black);
+}
+
+.blue {
+    color: var(--main-bg-color-blue);
+}
+
+.dark-blue {
+    color: var(--main-bg-color-dark-blue);
+}
+
+.red {
+    color: var(--main-bg-color-red);
+}
+
+
+/*service classes*/
+* {
+	text-align: center;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.link {
+    color: var(--main-bg-color-red);
+    font-weight: bold;
+}
+
+.main-heading {
+    text-transform: uppercase;
+    line-height: 1.444;
+    padding-bottom: 25px;
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.main-heading:after {
+    content: '';
+    display: block;
+    width: 87px;
+    height: 4px;
+    margin: 25px auto 0 auto;
+    background-color: var(--main-bg-color-black);
+    opacity: 0.149;
+}
+
+.sub-title {
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#btns {
+    padding: 20px 50px;
+    font-size: 18px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+
+/********************************
+    Clearfix
+********************************/
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    line-height: 0;
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/********************************
+    4 Column Grid
+********************************/
+
+[class^="col-"] {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.col-1 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 75%;
+}
+
+.col-4 {
+    width: 100%;
+}
+
+
+/* SECTIONS */
+section {
+    padding: 50px 0 100px 0;
+}
+
+#about {
+    background: var(--main-bg-color-dark-blue);
+}
+
+#skills {
+    background: var(--main-bg-color-grey);
+}
+
+#portfolio {
+    background: var(--main-bg-color-dark-blue)
+}
+
+#contact {
+    background: var(--main-bg-color-red)
+}
+
+
+/* Header Style */
+
+header {
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    background: var(--main-bg-color-grey);
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    background-image: url(http://www.transparenttextures.com/patterns/cream-pixels.png);
+}
+
+.small {
+    height: 50px;
+}
+
+.small .logo {
+    font-size: 1.7em;
+    margin: 10px 20px;
+}
+
+.logo {
+    margin: 30px 30px;
+    height: 100%;
+    width: 100%;
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    color: var(--main-bg-color-dark-blue);
+}
+
+.wrap-logo {
+    float: left;
+    height: 100%;
+}
+
+.small-nav {
+    display: none;
+}
+
+.big-nav {
+    text-align: right;
+    float: right;
+}
+
+header,
+.logo,
+nav {
+    -webkit-transition: all 1.5s;
+    transition: all 1.5s;
+}
+
+.main-nav-link {
+    padding-right: 40px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--main-bg-color-dark-blue);
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.main-nav-link:hover {
+    font-size: 18px;
+}
+
+.active {
+    color: var(--main-bg-color-blue);
+}
+
+.header-img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+
+/* ABOUT */
+
+.pf-img {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.pf-info {
+    padding: 20px 50px 50px 50px;
+}
+
+.info-name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--main-bg-color-white);
+    margin-bottom: 27px;
+}
+
+.info {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main-bg-color-white);
+}
+
+.spanLogo {
+    height: 16px;
+}
+
+.spanLogo img {
+    height: 16px;
+    display: inline-block;
+}
+
+.cv-btns {
+    color: var(--main-bg-color-dark-blue);
+    background: var(--main-bg-color-grey);
+}
+
+
+/* SKILLS */
+
+.skill {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--main-bg-color-dark-blue);
+}
+
+.bar {
+    width: 80%;
+    height: 30px;
+    border-radius: 30px;
+    background: var(--main-bg-color-dark-blue);
+    margin: 5px auto;
+}
+
+.insideBar {
+    height: 30px;
+    border-radius: 30px;
+    background: #23BA99;
+}
+
+
+/* PORTFOLIO */
+
+.links-in-portfolio {
+	text-decoration: none;
+    color: var(--main-bg-color-grey);
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.083;
+    text-align: center;
+    padding: 10px 25px;
+    background-color: var(--main-bg-color-red);
+    margin: 6px;
+    border-radius: 3px;
+}
+.active-link {
+	background-color:var(--main-bg-color-grey);
+	color: var(--main-bg-color-dark-blue);
+}
+.active-link:hover {
+	background-color:var(--main-bg-color-grey);
+	color: var(--main-bg-color-dark-blue);
+}
+.links-in-portfolio:hover {
+    background-color: var(--main-bg-color-blue);
+}
+.links-in-portfolio:visited {
+    background-color: var(--main-bg-color-white);
+}
+.skills-wrapper img {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+.slide-in {
+    opacity: 1;
+    transition: all .5s;
+    transform: translateX(0%) scale(0.75);
+}
+
+.slide-in.activeImg {
+    opacity: 0;
+    transform: translateX(30%) scale(1);
+}
+
+.slide-in:hover {
+    /* // -moz-transform: scale(1.4);
+  // -webkit-transform: scale(1.4);
+  // transform: scale(1.4); */
+    transform: translateX(0%) scale(1.75);
+}
+
+.description {
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: var(--main-bg-color-white);
+    font-size: 19px;
+}
+
+.btn {
+	padding: 20px 50px;
+    font-size: 18px;
+    border-radius: 3px;
+    text-transform: uppercase;
+	border: 0;
+	background: var(--main-bg-color-grey);
+	color: var(--main-bg-color-dark-blue);
+	text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+	margin: 0 auto;
+	margin-top: 40px;
+    font-weight: bold;
+}
+
+/* CONTACT FORM */
+.input-small {
+    background-color: var(--main-bg-color-grey);
+    padding: 20px;
+    border-radius: 3px;
+    border: 0;
+    width: 80%;
+    margin: 0 10% 25px 10%;
+}
+
+.message {
+    width: 90%;
+    height: 200px;
+    margin: 0 5% 50px 5%;
+    padding: 20px;
+    background-color: var(--main-bg-color-grey);
+    border-radius: 3px;
+    border: 0;
+}
+
+.contact-btns {
+    color: var(--main-bg-color-grey);
+    background: var(--main-bg-color-dark-blue);
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--main-bg-color-dark-blue);
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    background-image: url(http://www.transparenttextures.com/patterns/cream-pixels.png);
+}
+
+.wrap-footer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.social {
+    float: left;
+    width: 25%;
+}
+
+.social img {
+    width: 50%;
+}
+
+footer a:hover {
+    color: var(--main-bg-color-blue);
+}
+
+
+/* MEDIA QUERIES for responsive design */
+
+@media screen and (max-width: 900px) {
+    .col-1 {
+        width: 50%;
+    }
+    .col-2 {
+        width: 100%;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .col-4 {
+        width: 100%;
+    }
+    .input-small {
+        width: 90%;
+        margin: 0 5% 20px 5%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logo {
+        display: none;
+    }
+    .big-nav {
+        float: left;
+        margin-left: 20px;
+    }
+    .main-nav-link {
+        font-size: 15px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+	[class^="col-"] {
+		width: 100%;
+	}
+}
